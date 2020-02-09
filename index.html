@@ -1,1 +1,944 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/main.0a9771e6.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(f){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],a=0,l=[];a<n.length;a++)t=n[a],Object.prototype.hasOwnProperty.call(c,t)&&c[t]&&l.push(c[t][0]),c[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(f[r]=o[r]);for(s&&s(e);l.length;)l.shift()();return p.push.apply(p,u||[]),i()}function i(){for(var e,r=0;r<p.length;r++){for(var t=p[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==c[u]&&(n=!1)}n&&(p.splice(r--,1),e=a(a.s=t[0]))}return e}var t={},c={1:0},p=[];function a(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return f[e].call(r.exports,r,r.exports,a),r.l=!0,r.exports}a.m=f,a.c=t,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(r,e){if(1&e&&(r=a(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)a.d(t,n,function(e){return r[e]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/";var r=this["webpackJsonpreact-dashboard"]=this["webpackJsonpreact-dashboard"]||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;i()}([])</script><script src="/static/js/2.cb9959a2.chunk.js"></script><script src="/static/js/main.c15367b1.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Wajeeh Anwar's Github Page Portal" />
+  <meta name="keywords" content="Wajeeh, Anwar, Github, Resume, Portfolio" />
+  <meta name="author" content="Wajeeh Anwar" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Wajeeh | Message in a Bottle</title>
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="./css/plugins.css" rel="stylesheet" />
+  <!-- <link href="./css/resume.css" rel="stylesheet" /> -->
+  <link href="./css/style.css" rel="stylesheet" />
+  <link href="./css/resume.css" rel="stylesheet" />
+
+
+
+
+
+  <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+
+
+</head>
+
+<body>
+  <div class="wrapper-all">
+    <div class="preloader">
+      <div class="spinner-wrap">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <div id="popup-blog">
+      <div class="container">
+        <div class="inner-popup scrollable"></div>
+      </div>
+      <span class="close"><a href="#"></a></span>
+    </div>
+    <header class="header">
+      <div class="navigation-wrap">
+        <div class="container">
+          <div class="navigation-inner">
+            <div class="nav-list-wrap">
+              <div class="menu">
+                <ul class="anchor-nav">
+                  <li><a href="#home">home</a></li>
+                  <li><a href="#about">aboutMe</a></li>
+                  <li><a href="#services">toolSet</a></li>
+                  <li><a href="#portfolio">portfolio</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trigger">
+              <div class="hamburger hamburger--collapse-r">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu-wrap">
+        <div class="mob-menu">
+          <ul class="anchor-nav">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">aboutMe</a></li>
+            <li><a href="#services">toolSet</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="section-base" id="home">
+        <div class="hero-header">
+          <div class="universal-box-wrap">
+            <div class="bg-wrap">
+              <div class="overlay-image hero jarallax" data-speed="0"></div>
+              <div class="overlay-video"></div>
+              <div class="overlay-color hero"></div>
+            </div>
+            <div class="content hero">
+              <div class="container hero">
+                <div class="hero-title">
+                  <h1 class="name-title">Wajeeh Anwar</h1>
+                  <p class="first"><span class="another"></span> <span class="animation-text-word"></span></p>
+                  <div class="social-icons">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/wajeehanwar" target="-blank">Linkedin</a></li>
+                      <li><a href="https://www.github.com/wajeehanwar/" target="-blank">Github</a></li>
+                      <li class="anchor"><a href="#about">Resume</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="discover-wrap anchor shape">
+                <span>
+                  <a href="#about">Explore</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom shape">
+            <img src="img/shape/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section-base" id="about">
+        <div class="container">
+          <div class="about-wrap">
+            <div class="author-wrap">
+              <div class="leftbox  fadeIn" data--duration="0.6s">
+                <div class="image">
+                  <img src="img/about/600x700.jpg" alt="" />
+                  <div class="main" data-img-url="img/about/profile.png"></div>
+                </div>
+              </div>
+              <div class="rightbox  fadeIn" data--duration="0.6s" data--delay="0.2s">
+                <div class="main-title-holder about">
+                  <h3>aboutMe</h3>
+                </div>
+                <div class="subtitle">
+                  <p>Software Engineer &amp; <span class="animation-text-word-2"></span></p>
+                </div>
+                <div class="definition">
+                  <p>Hi! My name is <strong>Wajeeh Anwar</strong>. I am an innovative, self-driven and results-oriented,
+                    Computer Science honor graduate, with over 13 years of retail leadership experience. More recently,
+                    I have focused on gaining
+                    hands-on experience with various frontend and backend frameworks. My proven success with driving
+                    results both individually and as a team player, consistently meeting deadlines and goals, has
+                    allowed me to win multiple excellence
+                    awards in various roles.</p>
+                </div>
+                <div class="progress-bar-wrap-total">
+                  <div class="progress-wrap" data-size="small" data-round="c" data-strip="off">
+                    <div class="progress2" data-value="100" data-color="#51A0D5">
+                      <span><span class="label">Java</span><span class="number">Kotlin • JDBC</span></span>
+                      <div class="bar-bg">
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress2" data-value="100" data-color="#51A0D5">
+                      <span><span class="label">JavaScript</span><span class="number">Angular • React •
+                          Node</span></span>
+                      <div class="bar-bg">
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress2" data-value="100" data-color="#51A0D5">
+                      <span><span class="label">SQL</span><span class="number">Oracle • MySQL</span></span>
+                      <div class="bar-bg">
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress2" data-value="100" data-color="#51A0D5">
+                      <span><span class="label">NoSQL</span><span class="number">FireBase • MongoDB</span></span>
+                      <div class="bar-bg">
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-short-contact-wrap">
+                  <ul>
+                    <li>
+                      <img class="svg" src="img/svg/call-3.svg" alt="" />
+                      <span><label>Phone:</label> <a>+1 (617) 888 2328</a></span>
+                    </li>
+                    <li>
+                      <img class="svg" src="img/svg/message-5.svg" alt="" />
+                      <span><label>Mail:</label> <a
+                          href="mailto:wajeeh.anwar@gmail.com">wajeeh.anwar&#64;gmail.com</a></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-wrap blog-list" data-column="3" data-space="30">
+                  <ul class="total">
+                    <li class=" fadeIn" data--duration="0.6s">
+                      <div class="inner-list">
+                        <div class="definitions-wrap">
+                          <div class="full-def">
+
+
+
+                            <div class="container2">
+                              <div class="row">
+                                <aside class="col l4 m12 s12 sidebar z-depth-1" id="sidebar">
+                                  <div class="row">
+                                    <div class="heading">
+                                      <div class="feature-img">
+                                        <a href="index.html"><img src="./img/about/profile.png" class="responsive-img"
+                                            alt="" /></a>
+                                      </div>
+                                      <div class="title col s12 m12 l9 right fadeIn" data--duration="0.1s">
+                                        <h2>Wajeeh Anwar</h2>
+                                      </div>
+                                    </div>
+                                    <div class="col l12 m12 s12 sort-info sidebar-item">
+                                      <div class="row">
+                                        <div class="col m12 s12 l3 icon">
+                                          <i class="fa fa-file-pdf"></i>
+                                        </div>
+                                        <div class="col m12 s12 l9 info  fadeIn a1" data--duration="0.1s">
+                                          <div class="section-item-details">
+                                            <a href="./resume/resume.pdf" target="_blank">Download</a>
+                                          </div>
+                                        </div>
+                                        <div class="col m12 s12 l3 icon">
+                                          <i class="fab fa-github"></i>
+                                        </div>
+                                        <div class="col m12 s12 l9 info  fadeIn a1" data--duration="0.2s">
+                                          <div class="section-item-details">
+
+                                            <a href="https://www.github.com/wajeehanwar/" target="_blank">Github</a>
+                                          </div>
+                                        </div>
+                                        <div class="col m12 s12 l3 icon">
+                                          <i class="fab fa-linkedin"></i>
+                                        </div>
+                                        <div class="col m12 s12 l9 info  fadeIn a1" data--duration="0.3s">
+                                          <div class="section-item-details">
+                                            <a href="https://www.linkedin.com/in/wajeehanwar"
+                                              target="_blank">Linkedin</a>
+                                          </div>
+                                        </div>
+                                        <div class="col m12 s12 l3 icon">
+                                          <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col m12 s12 l9 info  fadeIn a2" data--duration="0.4s">
+                                          <div class="section-item-details">
+                                            <div class="personal">
+                                              <a href="tel:617-888-2328">(617)-888-2328</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col m12 s12 l3 icon">
+                                          <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="col m12 s12 l9 info  fadeIn a3" data--duration="0.5s">
+                                          <div class="section-item-details">
+                                            <div class="personal">
+                                              <a href="mailto:wajeeh.anwar@gmail.com">wajeeh.anwar@gmail.com</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col l3 m12  s12 icon">
+                                          <i class="fa fa-home"></i>
+                                        </div>
+                                        <div class="col m12 s12 l9 info  fadeIn a4" data--duration="0.6s">
+                                          <div class="section-item-details">
+                                            <div class="address-details">
+                                              <h4>
+                                                36 Hartland Way <span></span><br />
+                                                Acton, Massachusetts 01720<br />
+                                                <span></span>
+                                              </h4>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </aside>
+                                <section class="col s12 m12 l8 section">
+                                  <div class="row">
+                                    <div class="section-wrapper z-depth-1">
+                                      <div class="section-icon col s12 m12 l2">
+                                        <i class="fa fa-sticky-note"></i>
+                                      </div>
+                                      <div class="custom-content col s12 m12 l10  fadeIn a1" data--duration="0.1s">
+                                        <h2>Summary</h2>
+                                        <div class="custom-content-wrapper  fadeIn a2" data--duration="0.2s">
+                                          <ul class="summary">
+                                            <li class="custom-content-wrapper">
+                                              <p> Innovative, self-driven and <b>results oriented</b> fresh graduate
+                                                <b>full-stack developer</b>
+                                                with over <b>13 years</b> of retail leadership experience.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Proficient programming in <b>Java</b>, <b>C</b>, <b>Javascript</b> and
+                                                <b>C++</b>.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Hands on experience in <b>ORACLE</b> and <b>MySQL</b> relational
+                                                databases.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Diversified experience in providing customer-specific <b>technology
+                                                  solutions</b> in a
+                                                <b>consultative</b> environment.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Proven ability to strategically expand <b>client-base</b> in both
+                                                business-to-individual and
+                                                business-to-business environments.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Instrumental in creating and <b>implementing processes</b>.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Demonstrated ability to create <b>SMART</b> Strategic Plans, delivering
+                                                <b>measurable
+                                                  results</b> through implementation, while attracting,
+                                                <b>motivating</b> and retaining
+                                                outstanding people.</p>
+                                              </liclass="custom-content-wrapper">
+                                            <li class="custom-content-wrapper">
+                                              <p>Proven success <b>driving results</b> both individually and as a
+                                                <b>team player</b> to meet
+                                                deadlines and goals.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Consistently developed a culture of ideas, collaboration,
+                                                accountability, and continuous
+                                                technical and process improvement, empowering teams.</p>
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Won multiple high profile <b>excellence awards</b> in various roles for
+                                                delivering objectives
+                                                while exhibiting a strong combination of the following criteria:
+                                                <b>Consistency and Quality</b>,
+                                                <b>Problem
+                                                  Solving and Innovation</b>, <b>Customer Satisfaction and
+                                                  Initiative</b> and
+                                                <b>Accountability</b>.
+                                            </li>
+                                            <li class="custom-content-wrapper">
+                                              <p>Entrepreneur and leadership level experience.</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="section-wrapper z-depth-1">
+                                      <div class="section-icon col s12 m12 l2">
+                                        <i class="fa fa-atom"></i>
+                                      </div>
+                                      <div class="custom-content col s12 m12 l10  fadeIn a1" data--duration="0.3s">
+                                        <h2>Technology</h2>
+                                        <table id="technology">
+                                          <col width="10">
+                                          <col width="10">
+                                          <tr>
+                                            <th>Frontend</th>
+                                            <td>JavaScript (ES6+), Angular, React, CSS3, HTML5</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Backend</th>
+                                            <td>Java, C++, SQL, Node.js</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Storage</th>
+                                            <td>MySQL, Oracle, SQL Server</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Mobile</th>
+                                            <td>React Native, Kotlin, Swift, Usability Testing</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Infrastructure</th>
+                                            <td>Windows, UNIX, Linux, MacOS, AWS</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Software Management</th>
+                                            <td>Agile Development, Waterfall, Kanban, Test Driven Development, Scoping &
+                                              Estimation, Code
+                                              Reviews & Refactoring, Unit & Functional Testing</td>
+                                          </tr>
+                                          <tr>
+                                            <th>People Management</th>
+                                            <td>Recruiting, Team Building Mentorship, Career Development</td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div class="section-wrapper z-depth-1">
+                                      <div class="section-icon col s12 m12 l2">
+                                        <i class="fa fa-graduation-cap"></i>
+                                      </div>
+                                      <div class="custom-content col s12 m12 l10  fadeIn a1" data--duration="0.4s">
+                                        <h2>Education</h2>
+                                        <div class="custom-content-wrapper  fadeIn a2" data--duration="0.5s">
+                                          <h3 class="education">University of Massachusetts<br /><span>BA with Honors in
+                                              Computer Science</span>
+                                          </h3>
+                                          <span>2013 - 2019 </span>
+                                          <p>
+                                            Honors: <i>Magna Cum Laude</i> | Golden Key Honor Society (Top 5%)
+                                          </p>
+                                          <p>
+                                            Focus: Advanced Data Structures and Algorithms | Database Management |
+                                            Artificial Intelligence |
+                                            Advanced Algorithm Analysis
+                                          </p>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                    <div class="section-wrapper z-depth-1">
+                                      <div class="section-icon col s12 m12 l2">
+                                        <i class="fa fa-suitcase"></i>
+                                      </div>
+                                      <div class="custom-content col s12 m12 l10  fadeIn a1" data--duration="0.6s">
+                                        <h2>Experience</h2>
+
+                                        <div class="custom-content-wrapper  fadeIn a2" data--duration="0.7s">
+                                          <h3 class="work-position">Venture Development Center | Potoo<span>Full Stack
+                                              Developer</span></h3>
+                                          <div class="work-date">2015 - 2016</div>
+                                          <ul>
+                                            <li>
+                                              <p><b>Dual responsibility</b> in Potoo, a social app created for community
+                                                leaders to enhance
+                                                member engagement, at the Venture Development Center, an acclaimed,
+                                                highly selective tech
+                                                startup incubator
+                                                in Boston.</p>
+                                            </li>
+                                            <li>
+                                              <p><b>Grew user-base</b> from 50 to 3000 in 2 months utilizing various
+                                                approaches as marketing
+                                                manager.</p>
+                                            </li>
+                                            <li>
+                                              <p><b>Developed</b> and implemented an <b>algorithm</b> to identify and
+                                                block negative
+                                                communications based on community feedback, resulting in increased user
+                                                interaction.</p>
+                                            </li>
+                                            <li>
+                                              <p><b>Implemented</b> a scoring system to track and reward active
+                                                community members, resulting in
+                                                an increase of 32% user interaction.</p>
+                                            </li>
+                                            <li>
+                                              <p>Implemented <b>code review</b> sessions to improve engineering quality.
+                                              </p>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="custom-content-wrapper  fadeIn a2" data--duration="0.8s">
+                                          <h3 class="work-position">Digital Asylum<span>Founder</span></h3>
+                                          <div class="work-date">2003 - 2015</div>
+                                          <ul>
+                                            <li>
+                                              <p>Created various technological solutions and implementations for
+                                                restaurant and legal small
+                                                businesses with:</p>
+                                            </li>
+                                            <ul class="nested-list">
+                                              <li>
+                                                <p>Hardware and software implementations for <b>point of sale</b>
+                                                  solutions, utilizing Intuit
+                                                  Quickbooks POS, allowing for cash and credit card transactions,
+                                                  increased inventory and
+                                                  customer tracking
+                                                  along with embedded synchronization into Quickbooks accounting
+                                                  software, resulting in overall
+                                                  increased sales and customer growth while reducing controllable
+                                                  expenses.</p>
+                                              </li>
+                                              <li>
+                                                <p>Digitized hard-copy based <b>expense tracking</b> utilizing Neat
+                                                  Receipts allowing clients to
+                                                  organize and evaluate business expenses by syncing reconciled expense
+                                                  data with Quickbooks
+                                                  accounting
+                                                  software.</p>
+                                              </li>
+                                              <li>
+                                                <p>Implementation of secure internet based video surveillance, utilizing
+                                                  Cisco IP Video
+                                                  Surveillance Systems, allowing clients to remotely monitor and respond
+                                                  with physical staff or
+                                                  law enforcement
+                                                  personnel, resulting in increased stakeholder <b>peace of mind</b> and
+                                                  loss
+                                                  prevention/recovery.</p>
+                                              </li>
+                                              <li>
+                                                <p>Managed server-based <b>security</b> services, utilizing Symantec
+                                                  Endpoint Protection,
+                                                  including reliable intrusion prevention, firewall, and anti-malware
+                                                  protective services along
+                                                  with user
+                                                  specific administrated security policies, resulting in increased
+                                                  internal and external data
+                                                  security while reducing downtime.</p>
+                                              </li>
+                                              <li>
+                                                <p>Facilitated various damaged hardware related <b>data recovery</b>,
+                                                  utilizing Seagate In-Lab
+                                                  Recovery, including reintegration of recovered data into the existing
+                                                  infrastructure, along
+                                                  with <b>preventative
+                                                    solutions</b> utilizing local backups with a combination of raid and
+                                                  Acronis True Image
+                                                  configurations as well as cloud-based backups utilizing Carbonite
+                                                  Safe, resulting in increased
+                                                  data retention
+                                                  and in some cases, invaluable business integrity.</p>
+                                              </li>
+                                            </ul>
+                                          </ul>
+                                        </div>
+                                        <div class="custom-content-wrapper  fadeIn a2" data--duration="0.9s">
+                                          <h3 class="work-position">Staples<span>Manager</span></h3>
+                                          <div class="work-date">2006 - 2013</div>
+                                          <ul>
+                                            <li>
+                                              <p>
+                                                Drove management of technology solutions, inclusive of operations flow,
+                                                resulting in above
+                                                <b>73% YoY bottom line growth</b> 3 years in a row.</p>
+                                            </li>
+                                            <li>
+                                              <p>Spearheaded sales and profit for Staples’ first multi-level urban
+                                                store, an exceptionally
+                                                fast-paced $5 million dollar store, while <b>leading teams</b>,
+                                                including full P&L
+                                                accountability, optimizing
+                                                controllable expenses. Success was used as a model for similar urban
+                                                markets.</p>
+                                            </li>
+                                            <li>
+                                              <p>Implemented a 3 year strategy to improve store performance,
+                                                implementing <b>Salesforce CRM</b>,
+                                                inclusive of environment, profile and user creation, resulting in an
+                                                annual <b>sales increase of
+                                                  4%</b>
+                                                to $5.2 million, <b>customer increase of 20%</b> to an average of 1200
+                                                customers per day, and
+                                                controllable <b>loss decrease of 60%</b> to 0.6% of annual sales.</p>
+                                            </li>
+                                            <li>
+                                              <p>Created 6-month targeted sales improvement strategy resulting in
+                                                <b>improved efficiency</b> of
+                                                labor resources and an increase of $35,000 in bottom-line sales. The
+                                                strategy focused on
+                                                identifying
+                                                primary opportunity <b>performance drivers</b> and using a holistic
+                                                employee engagement, while
+                                                documenting customer objections and focusing on high-volume categories.
+                                              </p>
+                                            </li>
+                                            <li>
+                                              <p>Secured multiple long-term <b>contracts</b> with local Cambridge
+                                                businesses including Harvard
+                                                University, Bikram Yoga, and Kaplan.</p>
+                                            </li>
+                                            <li>
+                                              <p>Developed professional relationships with <b>top tier clients</b>
+                                                utilizing analytics from
+                                                Salesforce Dashboard, Salesforce Lead Management and Salesforce Engage
+                                                for tier identification
+                                                and insightful
+                                                engagements, resulting in building long-term relationships with a focus
+                                                on client satisfaction.
+                                              </p>
+                                            </li>
+                                            <li>
+                                              <p>Created new improvement program for progressive training, coaching,
+                                                recruiting and induction,
+                                                with a holistic approach to engaging employees, overhauling their value
+                                                perception with
+                                                individual SMART
+                                                plans, incentives and recognition, utilizing Salesforce Sales
+                                                Performance Management to monitor
+                                                and recognize individual progress, resulting in over a <b>70% YOY
+                                                  satisfaction growth</b> for
+                                                both
+                                                employees and customers.
+                                              </p>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="custom-content-wrapper  fadeIn a2" data--duration="1.0s">
+                                          <h3 class="work-position">Exodus | Digital Island | Insight CTC<span>System
+                                              Administrator</span></h3>
+                                          <div class="work-date">2001 - 2004</div>
+                                          <ul>
+                                            <li>
+                                              <p>
+                                                Managed multiple Windows and Sun Solaris servers, with a focus on secure
+                                                client backups and
+                                                monitoring of data center operations.</p>
+                                            </li>
+                                            <li>
+                                              <p>Facilitated client work-order tickets in regards to server maintenance,
+                                                upgrades and emergency
+                                                incidents, resulting in 98% average uptime, reduction of 0.7% data loss
+                                                and 98% client
+                                                satisfaction.</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="section-wrapper z-depth-1">
+                                      <div class="section-icon col s12 m12 l2">
+                                        <i class="fa fa-smile-beam"></i>
+                                      </div>
+                                      <div class="interests col s12 m12 l10  fadeIn" data--duration="1.1s">
+                                        <h2>Interests</h2>
+                                        <ul>
+                                          <li>
+                                            <i class="fa fa-gamepad tooltipped" data-position="top" data-delay="50"
+                                              data-tooltip="Multiplayer Battle Strategy Games"></i>
+                                          </li>
+                                          <li>
+                                            <i class="fa fa-plane tooltipped" data-position="top" data-delay="50"
+                                              data-tooltip="International Travel"></i>
+                                          </li>
+                                          <li>
+                                            <i class="fa fa-motorcycle tooltipped" data-position="top" data-delay="50"
+                                              data-tooltip="Motorcycle Track Training"></i>
+                                          </li>
+                                          <li>
+                                            <i class="fa fa-coffee tooltipped" data-position="top" data-delay="50"
+                                              data-tooltip="The Art of Brewing Cappuccino"></i>
+                                          </li>
+                                          <li>
+                                            <i class="fa fa-dumbbell tooltipped" data-position="top" data-delay="50"
+                                              data-tooltip="Fitness Training"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </section>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="read-more">
+                            <a href="#">Resume</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="counter-wrap" data-col="4" data-delay="300">
+          <ul class="counter-list miniboxes">
+            <li>
+              <div class="inner minibox">
+                <h3><span><span class="counter" data-from="0" data-to="100" data-speed="3000">0</span>+</span></h3>
+                <span>Projects Completed</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner minibox">
+                <h3><span><span class="counter" data-from="0" data-to="100000" data-speed="3000">0</span>+</span></h3>
+                <span>Lines of Code</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner minibox">
+                <h3><span><span class="counter" data-from="0" data-to="7" data-speed="3000">0</span>+</span></h3>
+                <span>Years of Coding</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner minibox">
+                <h3><span><span class="counter" data-from="0" data-to="10" data-speed="3000">0</span>+</span></h3>
+                <span>Awards</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-base" id="services">
+        <div class="services-total-wrap">
+          <div class="container">
+            <div class="main-title-holder services">
+              <h3>toolSet</h3>
+              <span>Some of my tools of the trade</span>
+            </div>
+            <div class="services-wrap">
+              <div class="list-wrap" data-column="3" data-space="70">
+                <ul class="total miniboxes">
+                  <li class=" fadeIn" data--duration="0.6s">
+                    <div class="inner-list minibox">
+                      <div class="service-icon">
+                        <img class="svg" src="img/svg/java_logo.svg" alt="" />
+                      </div>
+                      <div class="service-title">
+                        <h3>Java</h3>
+                      </div>
+                      <div class="service-definition">
+                        <p>Java is a general-purpose, object-oriented, high-level programming language with several
+                          features that make it ideal for web-based development.</p>
+                      </div>
+                      <span class="first"></span>
+                      <span class="second"></span>
+                    </div>
+                  </li>
+                  <li class=" fadeIn" data--duration="0.6s" data--delay="0.2s">
+                    <div class="inner-list minibox">
+                      <div class="service-icon">
+                        <img class="svg" src="img/svg/javascript_logo.svg" alt="" />
+                      </div>
+                      <div class="service-title">
+                        <h3>Javascript</h3>
+                      </div>
+                      <div class="service-definition">
+                        <p>JavaScript is a client-side programming language that runs inside a client browser and
+                          processes commands on a computer rather than a server.</p>
+                      </div>
+                      <span class="first"></span>
+                      <span class="second"></span>
+                    </div>
+                  </li>
+                  <li class=" fadeIn" data--duration="0.6s" data--delay="0.4s">
+                    <div class="inner-list minibox">
+                      <div class="service-icon">
+                        <img class="svg" src="img/svg/c++_logo.svg" alt="" />
+                      </div>
+                      <div class="service-title">
+                        <h3>C++</h3>
+                      </div>
+                      <div class="service-definition">
+                        <p>C++ is a general purpose, object-oriented, middle-level programming language and is an
+                          extension of C language.</p>
+                      </div>
+                      <span class="first"></span>
+                      <span class="second"></span>
+                    </div>
+                  </li>
+                  <li class=" fadeIn" data--duration="0.6s" data--delay="0.6s">
+                    <div class="inner-list minibox">
+                      <div class="service-icon">
+                        <img class="svg" src="img/svg/sql_logo.svg" alt="" />
+                      </div>
+                      <div class="service-title">
+                        <h3>SQL</h3>
+                      </div>
+                      <div class="service-definition">
+                        <p>SQL is a database query language that allows for adding, accessing and managing content in a
+                          database using CRUD within a database.</p>
+                      </div>
+                      <span class="first"></span>
+                      <span class="second"></span>
+                    </div>
+                  </li>
+                  <li class=" fadeIn" data--duration="0.6s" data--delay="0.8s">
+                    <div class="inner-list minibox">
+                      <div class="service-icon">
+                        <img class="svg" src="img/svg/nosql_logo.svg" alt="" />
+                      </div>
+                      <div class="service-title">
+                        <h3>NoSQL</h3>
+                      </div>
+                      <div class="service-definition">
+                        <p>NoSQL databases are known for their ease of development, functionality, and performance
+                          scale. They use a many of data models like document, graph, key-value, and search.</p>
+                      </div>
+                      <span class="first"></span>
+                      <span class="second"></span>
+                    </div>
+                  </li>
+                  <li class=" fadeIn" data--duration="0.6s" data--delay="1s">
+                    <div class="inner-list minibox">
+                      <div class="service-icon">
+                        <img class="svg" src="img/svg/framework_logo.svg" alt="" />
+                      </div>
+                      <div class="service-title">
+                        <h3>Frameworks</h3>
+                      </div>
+                      <div class="service-definition">
+                        <p>Frameworks are an abstraction in which software providing generic functionality can be
+                          selectively changed by additional user-written code, providing application-specific software
+                        </p>
+                      </div>
+                      <span class="first"></span>
+                      <span class="second"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-base" id="portfolio">
+        <div class="container">
+          <div class="portfolio-wrap">
+            <div class="main-title-holder portfolio">
+              <h3>portfolio</h3>
+              <span>A sampling of interesting projects</span>
+            </div>
+            <div class="main-title-holder portfolio">
+              <div class="main-title-holder portfolio">
+                <span>Git Code</span>
+              </div>
+              <div class="portfolio-titles"></div>
+              <ul class="portfolio-list">
+
+                <li class=" fadeIn" data--duration="0.6s">
+                  <div class="entry portfolio-animation-wrap" data-title="Content-Aware Image Cropper"
+                    data-category="Java">
+                    <a href="https://github.com/wajeehanwar/Content-Aware-Image-Cropper" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.2s">
+                  <div class="entry portfolio-animation-wrap" data-title="Serializable Money Transfer Transactions"
+                    data-category="Java, SQL">
+                    <a href="https://github.com/wajeehanwar/Serializable-Money-Transfer-Transactions" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.2s">
+                  <div class="entry portfolio-animation-wrap" data-title="React Dashboard"
+                    data-category="Javascript, JSX, React-DOM, HTML, CSS">
+                    <a href="https://github.com/wajeehanwar/React-Dashboard" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.2s">
+                  <div class="entry portfolio-animation-wrap" data-title="2DvsKD - A Boid Visualizer"
+                    data-category="Java">
+                    <a href="https://github.com/wajeehanwar/2DvsKD---A-Boid-Visualizer" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.4s">
+                  <div class="entry portfolio-animation-wrap" data-title="Capstone Project Portal"
+                    data-category="Firebase NOSQL, Javascript, HTML, CSS">
+                    <a href="https://github.com/wajeehanwar/Capstone-Project-Portal" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.6s">
+                  <div class="entry portfolio-animation-wrap" data-title="Huffman Encoding Compressor"
+                    data-category="Java">
+                    <a href="https://github.com/wajeehanwar/Huffman-Encoding-Compressor" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.8s">
+                  <div class="entry portfolio-animation-wrap" data-title="Flight Finder" data-category="Java, SQL">
+                    <a href="https://github.com/wajeehanwar/Java-SQL-Based-Flight-Finder" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="0.8s">
+                  <div class="entry portfolio-animation-wrap" data-title="Browser Dashboard"
+                    data-category="Javascript, HTML, CSS">
+                    <a href="https://github.com/wajeehanwar/Browser-Dashboard" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="1s">
+                  <div class="entry portfolio-animation-wrap"
+                    data-title="Geographic Coordinate Queried Yelp Restaurant Finder" data-category="Java, SQL">
+                    <a href="https://github.com/wajeehanwar/Geographic-Coordinate-Queried-Yelp-Restaurant-Finder"
+                      target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+                <li class=" fadeIn" data--duration="0.6s" data--delay="1s">
+                  <div class="entry portfolio-animation-wrap" data-title="Separate Chaining Hash Table Spell Checker"
+                    data-category="Java">
+                    <a href="https://github.com/wajeehanwar/Separate-Chaining-Hash-Table-Spell-Checker" target="-blank">
+                      <img src="img/portfolio/600x600.jpg" alt="" height="200px" />
+                      <div class="portfolio-image-main"></div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section-base">
+          <div class="footer-wrap">
+            <p class=" fadeIn" data--duration="0.6s">&copy; Copyright 2020 Wajeeh Anwar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/2cb31272c4.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/init3.js"></script>
+    <!-- /SCRIPTS -->
+
+</body>
+
+</html>
