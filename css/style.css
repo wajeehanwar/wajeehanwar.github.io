@@ -1542,11 +1542,28 @@ img.svg {
   padding: 0 20px;
 }
 
+.portfolio-title {
+  margin-bottom: 40px;
+}
+
 .entry {
   position: relative;
 }
 
 .portfolio-image-main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-image-main2 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1565,44 +1582,66 @@ img.svg {
   transform: scale(1.2);
 }
 
+.portfolio-image-main2:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.portfolio-list li:nth-child(1) .portfolio-image-main2 {
+  background-image: url(../img/portfolio/React-Dashboard.png);
+}
+
+.portfolio-list li:nth-child(2) .portfolio-image-main2 {
+  background-image: url(../img/portfolio/da-logo.png);
+}
+
+.portfolio-list li:nth-child(3) .portfolio-image-main2 {
+  background-image: url(../img/portfolio/Dr-Muhammad-Anwar.jpg);
+}
+
+.portfolio-list li:nth-child(4) .portfolio-image-main2 {
+  background-image: url(../img/portfolio/Browser-Dashboard.png);
+}
+
 .portfolio-list li:nth-child(1) .portfolio-image-main {
-  background-image: url(../img/portfolio/1.png);
+  background-image: url(../img/portfolio/Content-Aware-Image-Cropper.png);
 }
 
 .portfolio-list li:nth-child(2) .portfolio-image-main {
-  background-image: url(../img/portfolio/2.jpg);
+  background-image: url(../img/portfolio/Serializable-Money-Transfer-Transactions.jpg);
 }
 
 .portfolio-list li:nth-child(3) .portfolio-image-main {
-  background-image: url(../img/portfolio/3.png);
+  background-image: url(../img/portfolio/React-Dashboard.png);
 }
 
 .portfolio-list li:nth-child(4) .portfolio-image-main {
-  background-image: url(../img/portfolio/4.jpg);
+  background-image: url(../img/portfolio/2DvsKD---A-Boid-Visualizer.jpg);
 }
 
 .portfolio-list li:nth-child(5) .portfolio-image-main {
-  background-image: url(../img/portfolio/5.jpg);
+  background-image: url(../img/portfolio/Capstone-Project-Portal.jpg);
 }
 
 .portfolio-list li:nth-child(6) .portfolio-image-main {
-  background-image: url(../img/portfolio/6.jpg);
+  background-image: url(../img/portfolio/Huffman-Encoding-Compressor.jpg);
 }
 
 .portfolio-list li:nth-child(7) .portfolio-image-main {
-  background-image: url(../img/portfolio/7.jpg);
+  background-image: url(../img/portfolio/Java-SQL-Based-Flight-Finder.jpg);
 }
 
 .portfolio-list li:nth-child(8) .portfolio-image-main {
-  background-image: url(../img/portfolio/8.png);
+  background-image: url(../img/portfolio/Browser-Dashboard.png);
 }
 
 .portfolio-list li:nth-child(9) .portfolio-image-main {
-  background-image: url(../img/portfolio/9.png);
+  background-image: url(../img/portfolio/Geographic-Coordinate-Queried-Yelp-Restaurant-Finder.png);
 }
 
 .portfolio-list li:nth-child(10) .portfolio-image-main {
-  background-image: url(../img/portfolio/10.jpg);
+  background-image: url(../img/portfolio/Separate-Chaining-Hash-Table-Spell-Checker.jpg);
 }
 
 .counter-wrap {
