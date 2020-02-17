@@ -372,6 +372,10 @@ ul#summary li {
   margin-bottom: 25px;
 }
 
+.custom-content-wrapper p b {
+  color: #51a0d5;
+}
+
 .custom-content-wrapper li {
   list-style-type: circle;
   list-style-position: outside;
