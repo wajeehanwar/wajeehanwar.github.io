@@ -17,7 +17,6 @@ $(document).ready(function () {
     mobile: false
   });
   wow.init();
-  $("#portfolio-item").mixItUp();
   $(".sa-view-project-detail").on("click");
   $("#back-button").on("click");
 });
