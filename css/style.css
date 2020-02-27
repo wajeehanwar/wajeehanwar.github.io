@@ -1093,6 +1093,7 @@ img.svg {
 }
 
 .about-wrap .about-short-contact-wrap ul li a {
+  font-family: Montserrat;
   text-decoration: none;
   color: #000;
   position: relative;
@@ -2075,6 +2076,20 @@ img.svg {
     padding-left: 0;
     font-size: 45px;
   }
+
+  .about-and {
+    display: none;
+  }
+
+  /* .animation-text-word {
+    display: none;
+    overflow: hidden;
+  }
+
+  .animation-text-word-2 {
+    overflow: hidden;
+    display: none;
+  } */
 
   .about-wrap .leftbox {
     display: none;

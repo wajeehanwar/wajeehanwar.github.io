@@ -27,6 +27,22 @@ jQuery(document).ready(function () {
   });
 });
 
+
+// Remove text animation to prevent dynamically generated text overflow.
+function removeTextAnimation(screenWidth) {
+  if (screenWidth.matches) {
+    let titleAnimation = document.getElementById("title-text-animation");
+    titleAnimation.classList.remove("animation-text-word");
+
+    let aboutAnimation = document.getElementById("about-text-animation");
+    aboutAnimation.classList.remove("animation-text-word-2");
+  }
+}
+let screenWidth = window.matchMedia("(max-width: 480px)")
+removeTextAnimation(screenWidth)
+screenWidth.addListener(removeTextAnimation)
+
+
 function sting_images() {
   "use strict";
 
