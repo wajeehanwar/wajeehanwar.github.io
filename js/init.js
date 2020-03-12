@@ -183,10 +183,7 @@ function animate_text() {
     strings: [
       "Software Engineer",
       "Technology Solutions",
-      "Retail Specialist",
-      "Full-Stack Developer",
-      "Computer Scientist",
-      "Leader"
+      "Retail Specialist"
     ],
     loop: true,
     startDelay: 1e3,
@@ -198,10 +195,7 @@ function animate_text() {
   animateSpan2.typed({
     strings: [
       "Technology Solutions",
-      "Retail Specialist",
-      "Full-Stack Developer",
-      "Computer Scientist",
-      "Leader"
+      "Retail Specialist"
     ],
     loop: true,
     startDelay: 1e3,
